@@ -17,7 +17,6 @@ class CustomTokenObtainPairView(TokenObtainPairView):
         if response.status_code == 200:
             access_token = response.data.get('access')
             refresh_token = response.data.get('refresh')
-            print(response.get('access'))
             # print(refresh_token)
 
             response.set_cookie(
